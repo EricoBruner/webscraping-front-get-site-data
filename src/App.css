@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 5rem;
+  height: 12vh
+}
+
+.App-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-button {
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: calc(10px + 1vmin);
+  width: 8rem;
+  height: 2rem;
+  position: relative;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+}
+
+.App-button:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-offset: 15px;
+  outline-color: rgba(255, 255, 255, 0);
+  text-shadow: 1px 1px 2px #427388;
+}
+
+.App-input {
+  font-size: calc(10px + 1vmin);
+  color: #fff;
+  width: 30rem;
+  height: 2rem;
+  border: 0 solid;
+  background-color: transparent;
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: -1px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dashboard {
+  background-color: #363b44;
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.dashboard-item {
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 80%;
+  height: 3.5rem;
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.dashboard-item button {
+  color: #48cef7;
+  border: 0 solid;
+  height: 2.5rem;
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  cursor: pointer;
+  margin-right: 0.7rem;
+  background-color: transparent;
+}
+
+.dashboard-item button:hover {
+  background-color: #17191d;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.dashboard-item span {
+  text-align: left;
+}
+
+.dashboard-item-list {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dashboard-item-list ul {
+  overflow: hidden;
+  margin-top: 0;
+  list-style: none;
+  text-align: left;
+  font-size: 1rem;
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  padding: 1rem;
+  min-width: 25rem;
+  max-width: 25rem;
+  white-space: nowrap;
+  min-height: 19.7rem;
+}
+
+.dashboard-item-list button {
+  color: #48cef7;
+  border: 0 solid;
+  height: 2.5rem;
+  width: 100%;
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: 1rem;
+  border-radius: 3px;
+}
+
+.dashboard-item-list button:hover {
+  background-color: #17191d;
+  color: #fff;
+  transition: 0.5s;
+}
+
