@@ -81,12 +81,12 @@ function App() {
       </header>
       <div className="dashboard">
         <div className='dashboard-item'>
-          <CopyToClipboard text={DATA.city}><button>COPY</button></CopyToClipboard>
-          <span>{dataIsNull(DATA.city)}</span> 
-        </div>
-        <div className='dashboard-item'>
           <CopyToClipboard text={DATA.rideCity}><button>COPY</button></CopyToClipboard>
           <span>{dataIsNull(DATA.rideCity)}</span> 
+        </div>
+        <div className='dashboard-item'>
+          <CopyToClipboard text={DATA.city}><button>COPY</button></CopyToClipboard>
+          <span>{dataIsNull(DATA.city)}</span> 
         </div>
         <div className='dashboard-item'>
           <CopyToClipboard text={DATA.titleOne}><button>COPY</button></CopyToClipboard>
