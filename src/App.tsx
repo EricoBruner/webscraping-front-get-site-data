@@ -5,6 +5,8 @@ import logo from './logo.svg'
 import './App.css'
 
 interface DATA {
+  city: string;
+  rideCity: string;
   titleOne: string;
   titleTwo: string;
   textPageOne: string;
@@ -26,7 +28,9 @@ function dataIsNull(data: string | [string] | null | undefined) {
 function App() {
   const [URL, setURL] = useState('')
   const [DATA, setDATA] = useState<DATA>({
-    titleOne: 'Aguardando chamada!',
+    city: 'Aguardando chamada!',
+    rideCity: '',
+    titleOne: '',
     titleTwo: '',
     textPageOne: '',
     textPageTwo: '',
@@ -76,6 +80,14 @@ function App() {
         </p>
       </header>
       <div className="dashboard">
+        <div className='dashboard-item'>
+          <CopyToClipboard text={DATA.city}><button>COPY</button></CopyToClipboard>
+          <span>{dataIsNull(DATA.city)}</span> 
+        </div>
+        <div className='dashboard-item'>
+          <CopyToClipboard text={DATA.rideCity}><button>COPY</button></CopyToClipboard>
+          <span>{dataIsNull(DATA.rideCity)}</span> 
+        </div>
         <div className='dashboard-item'>
           <CopyToClipboard text={DATA.titleOne}><button>COPY</button></CopyToClipboard>
           <span>{dataIsNull(DATA.titleOne)}</span> 
