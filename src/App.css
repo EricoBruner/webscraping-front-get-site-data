@@ -31,7 +31,7 @@
 }
 
 .App-button {
-  color: #fff;
+  color: rgb(241, 241, 241);
   background-color: transparent;
   cursor: pointer;
   font-size: calc(10px + 1vmin);
@@ -55,11 +55,12 @@
   outline-offset: 15px;
   outline-color: rgba(255, 255, 255, 0);
   text-shadow: 1px 1px 2px #427388;
+  color: #a1e9ff;
 }
 
 .App-input {
   font-size: calc(10px + 1vmin);
-  color: #fff;
+  color: #c5f1ff;
   width: 30rem;
   height: 2rem;
   border: 0 solid;
@@ -88,7 +89,6 @@
   align-items: center;
   justify-content: start;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .dashboard-item {
@@ -102,6 +102,7 @@
   display: flex;
   align-items: center;
   justify-content: left;
+  
 }
 
 .dashboard-item button {
@@ -123,7 +124,12 @@
 }
 
 .dashboard-item span {
+  color: rgb(207, 207, 207);
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 0.3rem;
 }
 
 .dashboard-item-list {
@@ -135,7 +141,7 @@
 }
 
 .dashboard-item-list ul {
-  overflow: hidden;
+  color: rgb(207, 207, 207);
   margin-top: 0;
   list-style: none;
   text-align: left;
@@ -146,8 +152,10 @@
   padding: 1rem;
   min-width: 25rem;
   max-width: 25rem;
-  white-space: nowrap;
   min-height: 19.7rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .dashboard-item-list button {
